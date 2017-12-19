@@ -14,8 +14,24 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  -webkit-animation-name: leave;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-delay: 2.8s;
+  animation-name: leave;
+  animation-duration: 0.7s;
+  animation-delay: 2.8s;
 }
- 
+
+@-webkit-keyframes leave {
+ from {right: 0px;}
+ to {right: -300px;}
+}
+
+@keyframes leave {
+ from {right: 0px;}
+ to {right: -300px;}
+}
+
 .notify-item {
   width: 250px;
   margin: 5px 10px;
