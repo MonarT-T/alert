@@ -1,7 +1,9 @@
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 .notify-container {
@@ -15,21 +17,23 @@ body {
   top: 0;
   right: 0;
   -webkit-animation-name: leave;
-  -webkit-animation-duration: 0.7s;
-  -webkit-animation-delay: 2.8s;
+  -webkit-animation-duration: 0.72s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-timing-function: ease-in;
   animation-name: leave;
-  animation-duration: 0.7s;
-  animation-delay: 2.8s;
+  animation-duration: 0.72s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in;
 }
 
 @-webkit-keyframes leave {
- from {right: 0px;}
- to {right: -300px;}
+ from {margin-right: 0px;}
+ to {margin-right: -320px;}
 }
 
 @keyframes leave {
- from {right: 0px;}
- to {right: -300px;}
+ from {margin-right: 0%;}
+ to {margin-right: -320px;}
 }
 
 .notify-item {
